@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-width: 250px;
+    background-color:#EAEAE0
+}
+/* Header style*/
+.top{
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+/* clear floats Header style*/
+.top:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Input styling*/
+#myInput{
+    margin:0px;
+    padding: 10px;
+    border: 1px solid black;
+    min-width: 60%;
+    border-radius:20px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+#myInput:hover{
+    background-color: #EAEAE0;
+}
+/*Button styling */
+.addBtn{
+    padding: 10px;
+    min-width: 5%; 
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #EAEAE0;
+    border:1px solid black ;
+    border-radius:15px;
+    color: black;
+    transition: 0.2s;
+}
+/* Button hover */
+.addBtn:hover{
+    background-color: #1C4670;
+    color: #EAEAE0;
+}
+
+/*list styling*/
+.task{
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    max-width: 90%;
+    width: auto;
+    background-color: white;
+    text-align: center;
+}
+ul{
+    margin:5px 25px;
+    padding: 10px;
+    background-color: white;
+}
+/* List styling */
+li{
+    color: black;
+    font-size: 20px;
+    padding: 3px;
+    background-color: white;
+    text-align: justify;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    list-style: none;  
+}
+
+li:hover{
+    padding:5px;
+    border-radius:10px;
+    background:#EAEAE0;
+    color: black;
+}
+
+/*Checked styling*/
+.checked{
+    padding: 2px;
+    border-radius:15px;
+    color: black;
+    text-decoration: line-through;
+    border-spacing: 2px;
+    min-width: 5px;
+}
+ul li.checked::before {
+    position: absolute;
+    height: 15px;
+    width: 7px;
+}
+
+
+/*Close Button */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 10px 50px 10px 50x;
+    color: black;
+    
+}
+.close:hover{
+    border-radius: 15px;
+    background-color: #EAEAE0;
+    color: black;
+}
+
+/*Dark Mode*/
+.black{
+    background: rgba(10, 10, 10, 0.829);
+}
